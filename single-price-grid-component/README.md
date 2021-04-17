@@ -8,6 +8,5 @@
 
 ### Mobile Preview
 
-<img src="./design/mobile-design.jpg" alt="mobile-mockup" height="50%"/>
-
+<img src="./design/mobile-design.jpg" alt="mobile-mockup" width="25%"/>
 
