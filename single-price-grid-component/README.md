@@ -2,7 +2,7 @@
 
 ## Live Demo:
 
-https://easybank-landingp.netlify.app/
+https://codepen.io/visualdenniss/pen/ZELjXQv
 
 ## Design Mock ups
 
