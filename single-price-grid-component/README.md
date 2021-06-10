@@ -1,8 +1,8 @@
 # Frontend Mentor - Single price grid component
 
-## Live Demo: 
+## Live Demo:
 
-https://codepen.io/visualdenniss/pen/ZELjXQv
+https://easybank-landingp.netlify.app/
 
 ## Design Mock ups
 
