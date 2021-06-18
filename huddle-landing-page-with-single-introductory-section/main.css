@@ -1,0 +1,200 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%); 
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-image: url(/images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: var(--violet);
+}
+
+
+.main {
+ 
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 2.3125rem;
+    margin-bottom: 2.3125rem;
+    width: 18.8125rem;
+}
+
+.brand-logo {
+
+   text-align: left;
+   margin-bottom: 4.0625rem;
+}
+
+.brand-logo img {
+    width: 7.625rem;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+
+.hero img {
+    width: 100%;
+    margin-bottom: 4.0625rem;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 1.2rem;
+}
+
+.description {
+    color: white;
+    font-size: .875rem;
+    line-height: 2.1;
+    margin-bottom: 1.6625rem;
+}
+
+.cta {
+    padding: 16px 76px;
+    border-radius: 50px;
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    margin-bottom: 4.0625rem;
+    color: var(--violet);
+    transition: all 250ms ease-in-out;
+}
+
+.cta:hover {
+    cursor: pointer;
+    background-color: var(--soft-magenta);
+    color: white;
+}
+
+.social-icons {
+    
+    display: flex;
+    justify-content: center;
+}
+
+
+.icon:not(:last-child) {
+    margin-right: 0.625rem;
+}
+
+.icon svg {
+    width: 1.875rem;
+    height: 1.875rem;
+}
+
+/* Desktop  */
+
+@media (min-width: 376px) {
+    body {
+        background-size: contain;
+        
+    }
+}
+
+@media (min-width: 550px){
+
+    body {
+        padding: 1rem 1rem;
+    }
+    .main {
+        width: 100%;
+    }
+
+    .brand-logo img {
+        width: 202px;
+    }
+
+    .hero-image {
+        display: flex;
+        justify-content: center;
+    }
+    .hero img {
+        width: auto;     
+        height: 300px;
+       
+    }
+}
+
+@media (min-width: 850px) {
+    body {
+        background-image: url(/images/bg-mobile.svg);
+        background-size: cover;
+        padding: 1rem 4rem 0.8rem 4rem;
+    }
+    
+    .main {
+        width: 100%;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .text-block {
+        justify-content: flex-start ;
+        flex: 46%;
+        margin-left: 2rem;
+        padding-top: 2.5rem;
+    }
+
+    .title {
+        font-size: 35px;
+        text-align: left;
+    }
+
+    .description {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .cta {
+        align-self: flex-start;
+    }
+
+    .social-icons {
+        justify-content: flex-end;
+    }
+
+    svg {
+     width: 2rem;
+     height: 2rem; ;
+    }
+
+}
+
+@media (min-width: 1050px) {
+    body {
+        background-image: url(/images/bg-desktop.svg);
+        background-size: cover;  
+    }
+    .hero img {
+    height: 450px;
+    }
+
+}
