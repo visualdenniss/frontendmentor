@@ -1,4 +1,4 @@
-# Frontend Mentor - Easy Bank Landing Page
+# Frontend Mentor - Ping 
 
 ## Live Demo: 
 
