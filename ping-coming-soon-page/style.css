@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+
+:root {
+    /* ### Primary */
+
+--blue: hsl(223, 87%, 63%);
+
+/* ### Secondary */
+
+--paleBlue: hsl(223, 100%, 88%);
+--lightred: hsl(354, 100%, 66%);
+
+/* ### Neutral */
+
+--gray: hsl(0, 0%, 59%);
+--veryDarkBlue: hsl(209, 33%, 12%);
+}
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+    padding:80px 40px 25px;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.brand-logo{
+    width: 60px;
+    margin-bottom: 40px;
+    animation: fade-in-center 0.8s ease-in-out forwards;
+    opacity: 0;
+    transform: scale(1.2);
+}
+
+h1 {
+    color: var(--veryDarkBlue);
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 20px;
+    animation: fade-in-center 0.6s ease-in-out forwards;
+    opacity: 0;
+    transform: translateY(50%);
+    animation-delay: 1.2s;
+}
+
+h1 span {
+    color: var(--gray);
+    font-weight: 400;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 30px;
+    font-weight: 300;
+    animation: fade-in-center 0.6s ease-in-out forwards;
+    opacity: 0;
+    transform: scale(0.7);
+    animation-delay: 1.6s;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.input {
+ display: flex;
+ flex-direction: column;
+}
+
+input {
+ padding: 15px 20px;
+ border: 1px solid var(--paleBlue);
+ border-radius: 50px;
+ margin-bottom: 10px;
+ font-size: 14px;
+ height: 50px;
+ opacity: 0;
+ animation: fade-in 0.6s ease-out forwards;
+ animation-delay: 1.8s;
+ transform: translateY(100%);
+ opacity: 0;
+ 
+}
+
+input::placeholder {
+    color: var(--paleBlue);
+    font-size: 14px;
+}
+
+input:focus {
+ outline: none;
+ border: 1px solid var(--blue);
+}
+
+input.error{
+    outline: none;
+    border: 1px solid var(--lightred);
+}
+
+small {
+    display: none;
+    font-size: 11px;
+    color: var(--lightred);
+    margin-bottom: 20px;
+}
+
+form.error small {
+    display: block;
+}
+
+
+button {
+    color: white;
+    background-color: var(--blue);
+    border: none;
+    border-radius: 50px;
+    padding: 15px 20px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    box-shadow: 0px 5px 20px hsla(209, 33%, 12%, 0.4);
+    transition: opacity 200ms ease-in-out;
+    animation: fade-in 0.6s ease-out forwards;
+    transform: translateY(100%);
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+button:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+
+img.dashboard-img {
+    width: 100%;
+    margin-bottom: 80px;
+    animation: fade-in-center 0.8s ease-in-out forwards;
+    opacity: 0;
+    transform: scale(1.1);
+    animation-delay: 2.2s;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.face {
+    animation: fade-in-center 0.8s ease-in-out forwards;
+    opacity: 0;
+    transform: scale(0.6);
+    animation-delay: 2.6s;
+}
+
+.twit {
+    animation: fade-in-center 0.8s ease-in-out forwards;
+    opacity: 0;
+    transform: scale(0.6);
+    animation-delay: 2.7s;
+}
+
+.insta {
+    animation: fade-in-center 0.8s ease-in-out forwards;
+    opacity: 0;
+    transform: scale(0.6);
+    animation-delay: 2.8s;
+}
+
+.item {
+    border: 1px solid var(--paleBlue);
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item:hover {
+    background-color: var(--blue);
+
+}
+
+.item:not(:last-child) {
+    margin-right: 12px;
+}
+
+
+svg {
+    width: 60%;
+    fill: var(--blue);
+}
+
+svg:hover {
+    fill: white;
+}
+
+.copyright {
+    color: var(--gray);
+    font-size: 10px;
+    animation: fade-in-center 0.8s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 2.9s;
+}
+
+
+/* Desktop  */
+
+@media screen and (min-width: 550px)
+
+{
+
+    .container {
+        max-width: 650px;
+        margin: auto;
+    }
+
+    .brand-logo {
+        width: 80px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+
+    form {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .input {
+        flex: 0.69;
+    }
+
+    input {
+    
+    }
+
+    small {
+        align-self: flex-start;
+        margin-left: 20px;
+        
+    }
+
+    button {
+        flex: 0.29;
+    }
+
+}
+
+
+/* Animations */
+
+/* Animations */
+
+@keyframes fade-in-center {
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
