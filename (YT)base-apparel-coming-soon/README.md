@@ -1,4 +1,4 @@
-# Frontend Mentor - Easy Bank Landing Page
+# Frontend Mentor - Base Apparel Landing Page
 
 ## Live Demo: 
 
