@@ -1,5 +1,5 @@
 
-# Frontend Mentor - Single price grid component
+# Frontend Mentor - Huddle Landing Page
 
 ## Live Demo:
 
