@@ -1,5 +1,5 @@
 
-# Frontend Mentor - Single price grid component
+# Frontend Mentor - Car Card Component
 
 ## Live Demo:
 
